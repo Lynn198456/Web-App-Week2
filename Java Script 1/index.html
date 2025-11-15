@@ -1,0 +1,17 @@
+
+<html>
+    <body>
+        <ul id="list1"></ul>
+        <script>
+            //Add your code here
+            const list = ["HTML", "CSS", "JavaScript", "Python", "Java"];
+            const ul = document.getElementById("list1");
+
+            list.forEach(function(item) {
+                const li = document.createElement("li");
+                li.textContent = item;
+                ul.appendChild(li);
+            });
+        </script>
+    </body>
+</html>
