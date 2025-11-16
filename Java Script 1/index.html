@@ -1,17 +1,17 @@
-
 <html>
-    <body>
-        <ul id="list1"></ul>
-        <script>
-            //Add your code here
-            const list = ["HTML", "CSS", "JavaScript", "Python", "Java"];
-            const ul = document.getElementById("list1");
+  <body>
+    <ul id="list1"></ul>
 
-            list.forEach(function(item) {
-                const li = document.createElement("li");
-                li.textContent = item;
-                ul.appendChild(li);
-            });
-        </script>
-    </body>
+    <script>
+      for (let i = 1; i <= 20; i++) {
+
+        // skip 5, 10, 15
+        if (i === 5 || i === 10 || i === 15) {
+          continue;
+        }
+
+        document.getElementById("list1").innerHTML += `<li>${i}</li>`;
+      }
+    </script>
+  </body>
 </html>
